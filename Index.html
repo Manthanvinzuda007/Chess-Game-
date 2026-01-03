@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Simple Chess</title>
+</head>
+<body>
+
+    <header>
+        <h1>Royal Chess</h1>
+        <div class="mode-selector">
+            <button id="btn-friend" class="btn active" onclick="setMode('friend')">Friend</button>
+            <button id="btn-ai" class="btn" onclick="setMode('ai')">AI</button>
+            <button class="btn" style="opacity: 0.5;" disabled>Online (Soon)</button>
+        </div>
+    </header>
+
+    <div id="board-outer">
+        <div id="board-inner-line"></div>
+        <div id="board"></div>
+    </div>
+
+    <footer>
+        <div id="status" class="status-box">Gold's Turn</div>
+        <div id="game-over-msg" class="hidden"></div>
+        <button class="btn" onclick="resetGame()">Reset Match</button>
+    </footer>
+</body>
+</html>
